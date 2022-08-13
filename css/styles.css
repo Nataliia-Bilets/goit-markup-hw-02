@@ -17,7 +17,7 @@
    background-color:var(--primary-bgc);
    color: var(--primary-text-color);
    font-family: var(--primary-font);
-   font-weight: 400;
+   font-size: 14px;
    letter-spacing: 0.03em;
  }
  button {
@@ -45,14 +45,13 @@
 }
 .menu-link {
    font-weight: 500;
-   font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
    color: inherit;
 }
 .contact-mail,
 .contact-phone {
-   font-size: 14px;
+   font-weight: 500;
    line-height: 1.14;
    letter-spacing: 0.02em;
    color: var(--secondary-text-color);
@@ -103,16 +102,23 @@
 /* Особливості */
 
 .feature-noname {
-   opacity: 0;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(100%);
+   margin: -1px;
 }
 .feature-title{
    font-weight: 700;
-   font-size: 14px;
    line-height: 1.14;
    text-transform: uppercase;
 }
 .feature-text {
-   font-size: 14px;
    line-height: 1.71;
    color: var(--secondary-text-color);
 }
@@ -156,14 +162,12 @@
    color: var(--primary-text-color-team-dark);
 }
 .address-maps {
-   font-size: 14px;
    line-height: 1.71;
    font-style: normal;
    color: var(--primary-text-color-team-dark);
 }
 .address-mail,
 .address-phone {
-   font-size: 14px;
    line-height: 1.71;
    font-style: normal;
    color: var(--alfa-text-color);
@@ -178,11 +182,25 @@
 }
 /* Портфоліо */
 
+.filters-noname {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(100%);
+   margin: -1px;
+}
 .filters-btn {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.63;
+   letter-spacing: 0.03em;
    text-align: center;
+   color: var(--primary-text-color);
    background-color: var(--additional-bgc);
    border-radius: 4px;
    border: none;
@@ -204,8 +222,5 @@
    line-height: 1.88;
    color: var(--secondary-text-color);
 }
-.filters-noname,
-.project-noname {
-   opacity: 0;
-}
+
 
